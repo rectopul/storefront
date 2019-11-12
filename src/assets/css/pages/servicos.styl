@@ -1,0 +1,110 @@
+.servicos
+    &__btn
+        display flex
+    &__header
+        margin-top 120px
+    & h1 
+        font-family cantata
+        font-size 80px
+        color #262626
+        letter-spacing 0
+        position relative
+        padding-top 5px
+        &:before
+            content ''
+            position absolute
+            top 0
+            left 0
+            display inline-block
+            width 0
+            height 0
+            border-left 21px solid #1AB3E8
+            border-bottom 21px solid transparent
+            border-top 0 solid transparent
+        &:after
+            display inline-block
+            content ''
+            position relative
+            vertical-align middle
+            width 200px
+            height 0
+            border-bottom 2px solid #1AB3E8
+            margin-left 30px
+    & h3 
+        font-family cantata
+        font-size 19px
+        color #262626
+        letter-spacing 0
+        & a,
+        & a:active,
+        & a:visited,
+        & a:hover
+            color #262626
+    &__items
+        display flex
+        flex-flow column wrap
+        justify-content space-between
+        align-items flex-end
+        height 550px
+        margin-top 40px
+        margin-bottom 70px
+        & a,
+        & a:active,
+        & a:visited,
+        & a:hover
+            color #262626
+    &__item
+        display flex
+        flex-flow column
+        justify-content flex-end
+        align-items flex-start
+        flex 0 0 100%
+        text-align left
+        width 33.333333333333333%
+        max-width 33.333333333333333%
+        margin 0
+        padding 0
+        font-family lato
+        font-weight 400
+        font-size 16px
+        color #262626
+        letter-spacing 0
+        line-height 25px
+        box-sizing border-box
+        & p
+            margin-bottom 0
+        &__mansory
+            flex 0 0 60%
+            width 66.666666666666666%
+            display flex
+            flex-direction row
+            flex-wrap nowrap
+            justify-content space-between
+            order 3
+            & > .servicos__item,
+            & > .servicos__item:first-child
+                flex 0 0 calc(50% - 30px)
+                height 100%
+                width initial
+                max-width initial
+                margin-left 30px
+                justify-content flex-end
+        & figure,
+        & img 
+            max-width 100%
+            width 100%
+        &:first-child
+            flex 0 0 100%
+        &__description
+            flex 0 0 40%
+            font-family lato
+            font-weight 400
+            font-size 16px
+            color #262626
+            letter-spacing 0
+            line-height 25px
+            width 66.666666666666666%
+            order 2
+            padding-left 140px
+    &__content
+        text-align left

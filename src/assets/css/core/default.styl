@@ -1,0 +1,152 @@
+html 
+    font-family 'Roboto Condensed', sans-serif !important
+
+/*Fonts*/
+body
+    h1
+        font-family Roboto
+        font-size 35px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height normal
+        letter-spacing normal
+    h2
+        font-family Roboto
+        font-size 28px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height normal
+        letter-spacing normal
+    h3
+        font-family Roboto
+        font-size 22px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height normal
+        letter-spacing normal
+    h4
+        font-family Roboto
+        font-size 18px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height 1.83
+        letter-spacing normal
+    h5 
+        font-family Roboto
+        font-size 16px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height normal
+        letter-spacing normal
+    p 
+        font-family Roboto
+        font-size 14px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height normal
+        letter-spacing normal
+        color #8f8f8f
+    small 
+        font-family Roboto
+        font-size 16px
+        font-weight normal
+        font-style normal
+        font-stretch condensed
+        line-height 1.08
+        letter-spacing normal
+
+.p-lg
+    @media screen and (min-width: 992px)
+        padding-left: 120px !important
+        padding-right: 120px !important
+.link-archive
+    background: linear-gradient(to top, #000000, #252525)
+    text-align: center
+    font-family: Roboto
+    font-weight: 700
+    font-size: 15px
+    color: #FFDE14
+    letter-spacing: 0
+    text-align: center
+    border-radius: 38px
+    display: inline-block
+    margin: 0 auto
+    padding 15px 60px
+    transition: all 500ms ease
+    text-decoration: none
+    &.pmore
+        padding 15px 130px
+    &:hover 
+        text-decoration: none
+        color: #252525 !important
+        background: linear-gradient(to top, #E6C912, #FFDE14)
+    &:visited
+       color: #FFDE14 
+.link-white
+    background: linear-gradient(228deg, #F1F0F5 0%, #D7D7D7 100%)
+    text-align: center
+    font-family: Roboto
+    font-weight: 700
+    font-size: 15px
+    color: #252525
+    letter-spacing: 0
+    text-align: center
+    text-transform: uppercase
+    border-radius: 38px
+    display: inline-block
+    margin: 0 auto
+    padding 14px 90px
+    border 1px solid transparent
+    &:hover 
+        text-decoration: none
+        color: #FFDE14
+        border 1px solid #FFFFFF
+        background: linear-gradient(228deg, #000000 0%, #000000 100%)
+    &:active,
+    &:visited
+       color: #252525 
+
+/* Containers */
+.container-auaha,
+.container  
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+
+@media (min-width: 576px)
+    .container-auaha,
+    .container 
+        max-width: 540px
+
+@media (min-width: 768px)
+    .container-auaha
+    .container 
+        max-width: 720px
+
+@media (min-width: 992px)
+    .container-auaha,
+    .container 
+        max-width: 960px
+
+@media (min-width: 1200px)
+    .container-auaha,
+    .container 
+        max-width: 1300px !important
+
+.bg-black
+    background-color: cor06
+.bg-black-pure
+    background-color: #000000;
+.bg-grey
+    background-color: #f1f0f5
+
+@media (min-width: 992px)
+    .col-lg-3-5
+        flex: 0 0 28.571428%
+        max-width: 28.571428%

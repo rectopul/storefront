@@ -1,0 +1,326 @@
+.blog
+    z-index: 4
+    position relative
+    &__search
+        & > form 
+            width: 100%
+            max-width: 782px
+            height 76px
+            background: #FFFFFF
+            border-radius: 38px
+            padding: 0
+            display: flex
+            flex-flow: row-reverse nowrap
+            justify-content: flex-end
+            align-items: center
+            padding-left: 45px
+            padding-right: 45px
+            margin: 20px auto
+            & input[type=submit]
+                flex: 0 0 24px
+                height 24px
+                background transparent
+                border: 0
+                outline: none
+                font-size: 0
+                display: flex
+                flex-flow: row nowrap
+                justify-content: center
+                align-items: center
+                background-image url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCAzMC4yMzkgMzAuMjM5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMC4yMzkgMzAuMjM5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+PHBhdGggZD0iTTIwLjE5NCwzLjQ2Yy00LjYxMy00LjYxMy0xMi4xMjEtNC42MTMtMTYuNzM0LDBjLTQuNjEyLDQuNjE0LTQuNjEyLDEyLjEyMSwwLDE2LjczNSAgIGM0LjEwOCw0LjEwNywxMC41MDYsNC41NDcsMTUuMTE2LDEuMzRjMC4wOTcsMC40NTksMC4zMTksMC44OTcsMC42NzYsMS4yNTRsNi43MTgsNi43MThjMC45NzksMC45NzcsMi41NjEsMC45NzcsMy41MzUsMCAgIGMwLjk3OC0wLjk3OCwwLjk3OC0yLjU2LDAtMy41MzVsLTYuNzE4LTYuNzJjLTAuMzU1LTAuMzU0LTAuNzk0LTAuNTc3LTEuMjUzLTAuNjc0QzI0Ljc0MywxMy45NjcsMjQuMzAzLDcuNTcsMjAuMTk0LDMuNDZ6ICAgIE0xOC4wNzMsMTguMDc0Yy0zLjQ0NCwzLjQ0NC05LjA0OSwzLjQ0NC0xMi40OTIsMGMtMy40NDItMy40NDQtMy40NDItOS4wNDgsMC0xMi40OTJjMy40NDMtMy40NDMsOS4wNDgtMy40NDMsMTIuNDkyLDAgICBDMjEuNTE3LDkuMDI2LDIxLjUxNywxNC42MywxOC4wNzMsMTguMDc0eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCIgZmlsbD0iIzhGOEY4RiIvPjwvZz48L2c+IDwvc3ZnPg==')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 24px
+                margin-right: 15px
+                &:hover
+                    opacity 0.7
+            & label 
+                flex 1
+                height 100%
+                & , & > input
+                    margin 0
+                    padding 0
+                &  > input 
+                    width: 100%
+                    height 100%
+                    border: 0
+                    & , &::placeholder
+                        font-family: Roboto
+                        font-style: italic
+                        font-size: 18px
+                        color: #252525
+                        letter-spacing: 0
+    &__header-container
+        position relative
+        z-index: 3
+    &__pagetitle
+        font-family: Roboto
+        font-size: 35px
+        color: #FFDE14
+        letter-spacing: 0
+        text-align: center
+        margin-top: 80px
+    &__catslist
+        height 100%
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-end
+        align-items: center
+        & li  
+            margin-left: 50px
+            font-family: Roboto
+            font-size: 16px
+            color: #252525
+            letter-spacing: 0
+            & a 
+                color: #252525
+    &__nav
+        margin-top: 0
+        background-color: #FFFFFF
+        border-bottom 1px solid #F1F0F5
+        height 60px
+        & h6 
+            font-family: Roboto
+            font-size: 16px
+            color: #8F8F8F
+            letter-spacing: 0
+            margin: 0
+            vertical-align: middle
+            line-height: 60px
+        &  > .container 
+            height 100%
+        &-item
+            height 100%
+    &__news-form
+        height 260px
+        & form
+            width: 750px
+            margin: 0 auto
+            margin-top: 40px
+            & > div 
+                display: flex
+                flex-flow: column nowrap
+                & p:nth-child(2)
+                    display: flex
+                    flex-flow: row nowrap
+                    justify-content: center
+                    align-items: center
+                    font-family: Roboto 
+                    font-weight: 400
+                    font-size: 16px
+                    color: #8F8F8F
+                    letter-spacing: 0
+                    text-align: center
+                    & span 
+                        color: #252525
+                    & input[type=checkbox]
+                        margin-right: 6px
+                & p:nth-child(1)
+                    display: flex
+                    flex-flow: row nowrap
+                    justify-content: flex-start
+                    align-items: center
+                    width: 100%
+                    position relative
+                    & input[type=submit]
+                        position: absolute
+                        bottom: 10px
+                        width: 190px
+                        height 71px
+                        background-image: linear-gradient(230deg, #040404 0%, #252525 100%)
+                        border-radius: 38px
+                        font-family: Roboto 
+                        font-weight: 700
+                        font-size: 15px
+                        color: #FFDE14
+                        letter-spacing: 0
+                        text-align: center
+                        right 3px
+                        transition: all 500ms
+                        &:hover
+                            background-image: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(230,230,230,1) 9%, rgba(230,230,230,1) 100%)
+                            color: #000000
+                    & label 
+                        width: 100%
+                        display: flex
+                        flex-flow: column nowrap
+                        justify-content: space-between
+                        align-items: center
+                        position: relative
+                        font-family: Roboto 
+                        font-weight: 400
+                        font-size: 35px
+                        color: #252525
+                        letter-spacing: 0
+                        & > input
+                            width: 100%
+                            height 75px
+                            margin-top: 30px
+                            background-color: #FFFFFF
+                            box-shadow: 0 0 10px 0 rgba(0,0,0,0.10)
+                            border-radius: 38px
+                            font-family: Roboto
+                            font-weight: 400
+                            font-style: italic
+                            font-size: 18px
+                            color: #252525
+                            letter-spacing: 0
+                            text-align: left
+                            padding-right: 30px
+                            padding-left: 30px
+
+    &__post
+        margin-bottom: 75px
+        &-container
+            border-radius: 38px
+            box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.04)
+            border: solid 1px #f1f0f5
+            background-color: #ffffff
+            padding: 0 15px
+            padding-bottom: 25px
+            height 650px
+            max-height: 650px
+            min-height: 650px
+            overflow hidden
+        &-thumb
+            width: 100%
+            height 260px
+            max-height: 260px
+            text-align: center
+            display: flex
+            flex-flow: row nowrap
+            justify-content: center
+            align-items: flex-start
+            & img 
+                height 100%
+                width: auto
+        &-content
+            padding-left: 25px !important
+            padding-right: 25px !important
+            height 390px
+            display: flex
+            flex-flow: column nowrap
+            justify-content flex-start
+            align-items: flex-start
+        &-cat
+            font-family: Roboto
+            font-size: 14px
+            font-weight: normal
+            font-style: normal
+            font-stretch: condensed
+            line-height: normal
+            letter-spacing: normal
+            text-align: left
+            color: #8f8f8f
+            margin-top: 20px
+            & a 
+                color: #8f8f8f
+        & h2 
+            font-family: Roboto
+            font-size: 26px
+            font-weight: normal
+            font-style: normal
+            font-stretch: condensed
+            line-height: normal
+            letter-spacing: normal
+            color: #252525
+            margin-bottom: 20px
+            & a  
+                color: #252525
+        & footer 
+            display: flex
+            flex 1
+            flex-flow: row nowrap
+            justify-content: flex-start
+            align-items: flex-end
+            font-family: Roboto
+            font-size: 14px
+            font-weight: normal
+            font-style: normal
+            font-stretch: condensed
+            line-height: normal
+            letter-spacing: normal
+            text-align: center
+            color: #8f8f8f
+            text-transform: capitalize
+            margin-bottom: 40px
+            & img 
+                width 45px
+                height 45px
+                border-radius: 100%
+                margin-right: 10px
+    &__header
+        height auto !important
+        padding-bottom: 80px
+    &__sticky        
+        position relative
+        z-index: 3  
+        &-postcontent
+            @media screen and (min-width: 993px)
+                padding: 80px !important
+            & footer 
+                display: flex
+                flex 0 0 100%
+                flex-flow: row nowrap
+                justify-content: flex-start
+                align-items: center
+                font-family: Roboto
+                font-size: 14px
+                font-weight: normal
+                font-style: normal
+                font-stretch: condensed
+                line-height: normal
+                letter-spacing: normal
+                text-align: center
+                color: #8f8f8f
+                text-transform: capitalize
+                margin-top: 80px
+                & img 
+                    width 45px
+                    height 45px
+                    border-radius: 100%
+                    margin-right: 10px
+            & p 
+                font-family: Roboto
+                font-size: 16px
+                font-weight: normal
+                font-style: normal
+                font-stretch: condensed
+                line-height: 1.56
+                letter-spacing: normal
+                color: #8f8f8f
+            & h2 
+                font-family: Roboto
+                font-size: 26px
+                font-weight: normal
+                font-style: normal
+                font-stretch: condensed
+                line-height: normal
+                letter-spacing: normal
+                color: #252525
+                margin-bottom: 20px
+                & a  
+                    color: #252525
+        &-post
+            &-container
+                margin-top: 20px
+                border-radius: 38px
+                box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.04)
+                background-color: #ffffff
+                margin-bottom: 70px
+                overflow hidden            
+        &-thumbnail
+            flex: 0 0 50%
+            margin  0
+        &-cat
+            font-family: Roboto
+            font-size: 14px
+            font-weight: normal
+            font-style: normal
+            font-stretch: condensed
+            line-height: normal
+            letter-spacing: normal
+            text-align: left
+            color: #8f8f8f
+            & a 
+                color: #8f8f8f

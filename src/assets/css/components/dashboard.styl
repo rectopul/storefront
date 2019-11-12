@@ -1,0 +1,380 @@
+.process    
+    &__container
+        width: 100%
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-content: flex-start
+        position relative
+    &__list
+        flex 0 0 100%
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-content: flex-start
+        &_widget
+            position relative
+    &__item
+        flex 0 0 45px
+        width: 100%
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 20px
+        position relative
+        box-shadow: 0 0 2px rgba(0,0,0,0.7)
+        padding 5px 10px
+        box-sizing: border-box
+        border-radius: 3px
+        &:hover
+            & .process__coment
+                display: block
+        & article 
+            flex 1
+            padding 0 15px
+        & svg 
+            border-radius: 3px
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1)
+    &__form
+        position: absolute
+        width 100%
+        height 100%
+        left 50%
+        bottom: 0
+        display: flex        
+        flex-flow: row nowrap
+        justify-content: center
+        align-items: flex-start
+        max-height: 0;
+        overflow hidden
+        &.comentr
+            max-height: 1000px
+            overflow: initial
+        & > div 
+            position: relative
+            display: flex
+            flex-flow: column nowrap
+            justify-content: flex-start
+            align-items: center
+            width: 100%
+            left -50%
+            display: block
+            z-index: 3
+            background-color: #FFFFFF
+            box-shadow: 0 0 2px rgba(0,0,0,1)
+            padding 10px
+            border-radius: 4px
+            & textarea 
+                height 50px
+                width 100%
+            & p.form-submit
+                .submit
+                    background: #35C246
+                    border-color: #114017 #22802D #22802D
+                    box-shadow: inset 0 -1px 0 #22802D
+                    color: #fff
+                    text-decoration: none
+                    text-shadow: 0 -1px 1px #114017, 1px 0 1px #114017, 0 1px 1px #114017, -1px 0 1px #114017
+                    border-radius: 3px
+                    display: block
+                    padding 8px 12px !important
+            & .logged-in-as,
+            & .comment-reply-title
+                display: none
+                    
+    &__coment
+        position: absolute
+        right: 5px
+        top:  50%
+        margin-top: -17px
+        display: none
+        &-button
+            position: relative
+            width: 100%
+            height: 100%
+            display: inline-block
+            background: #35C246
+            border-color: #114017 #22802D #22802D
+            box-shadow: inset 0 -1px 0 #22802D
+            color: #fff
+            text-decoration: none
+            text-shadow: 0 -1px 1px #114017, 1px 0 1px #114017, 0 1px 1px #114017, -1px 0 1px #114017
+            border-radius: 3px
+            padding 8px 10px
+            transition: all 400ms
+            z-index: 4
+            &:hover
+                background: #7EC289
+                border-color: #2B422F #53805A #53805A
+                box-shadow: inset 0 -1px 0 #53805A
+                color: #fff
+                text-decoration: none
+                text-shadow: 0 -1px 1px #2B422F, 1px 0 1px #2B422F, 0 1px 1px #2B422F, -1px 0 1px #2B422F 
+            &:focus
+                outline: none 
+.label_list_clients
+    padding-left: 0 !important
+.custommetabox_clients
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    width 100%
+    box-sizing: border-box
+    height auto
+    padding: 6px 8px
+    box-shadow: 0 0 0 transparent
+    transition: box-shadow .1s linear
+    border-radius: 4px
+    border: 1px solid #8d96a0
+    margin-right: 15px
+    & .remove_client
+        background: #FF0F03;
+        border-color: #BF0B02 #E60E02 #E60E02;
+        box-shadow: inset 0 -1px 0 #E60E02;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #800801, 1px 0 1px #800801, 0 1px 1px #800801, -1px 0 1px #800801;
+        border-radius: 3px
+        opacity 0.5
+        transition opacity 400ms
+        &:hover
+            opacity 1
+.custommetabox_client
+    flex: 0 0 100%
+    display: flex
+    flex-flow: column nowrap
+    align-items: flex-start
+    justify-content: flex-start
+    margin-bottom: 5px
+    & h2 
+        padding 8px 0 !important
+
+.metabox__clientenc
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: flex-start
+    & > .text
+        display: flex
+        flex 0 0 100%
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-items: flex-start
+        & > h2 
+            padding-left: 0 !important
+    & button.select_client
+        background: #0085ba
+        border-color: #006a95 #00648c #00648c
+        box-shadow: inset 0 -1px 0 #00648c
+        color: #fff
+        text-decoration: none
+        text-shadow: 0 -1px 1px #005d82, 1px 0 1px #005d82, 0 1px 1px #005d82, -1px 0 1px #005d82
+        border-radius: 3px
+/* Ratings */
+.comments-rating 
+	border none
+	padding 0
+	margin-left 0
+	label 
+		display inline-block
+.rating-container 
+	font-size 0
+	unicode-bidi bidi-override
+	direction rtl
+	* 
+		font-size 1.4rem
+	& > input 
+		display none
+		& + label 
+			font-family 'dashicons'
+			display inline-block
+			overflow hidden
+			text-indent 9999px
+			width 1em
+			white-space nowrap
+			cursor pointer
+			margin 0
+			&:before 
+				display inline-block
+				text-indent -9999px
+				content "\f154"
+				color #888
+	& > .star-cb-clear 
+		& + label 
+			text-indent -9999px
+			width .5em
+			margin-left -.5em
+			&:before 
+				width .5em
+	&:hover 
+		& > input 
+			& + label 
+				&:before 
+					content "\f154"
+					color #888
+					text-shadow none
+.rating-container > input:checked ~ label:before,
+.rating-container > input + label:hover ~ label:before,
+.rating-container > input + label:hover:before 
+	content "\f155"
+	color #e52
+	text-shadow 0 0 1px #333
+.rating-container:hover > input + label:hover ~ label:before,
+.rating-container:hover > input + label:hover:before 
+	content "\f155"
+	color #e52
+	text-shadow 0 0 1px #333
+.comment-respond .rating-container > .star-cb-clear + label, .comment-respond .rating-container > input + label:before 
+	text-indent 9999px
+.comment-respond 
+	.rating-container 
+		& > input 
+			& + label 
+				text-indent -9999px
+.control
+    &__container
+        &-fluid
+            display: flex
+            flex-flow: column wrap
+            & img 
+                height auto
+            & * 
+                box-sizing: border-box
+
+.line
+    display: flex
+    flex-wrap: wrap
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
+.j-content-center
+    justify-content: space-around
+.image 
+    &__container
+        flex: 0 0 100%
+        max-width: 100%
+        position: relative
+        width: 100%
+        min-height: 1px
+        padding-right: 15px
+        padding-left: 15px
+    &__del
+        font-size: 30px
+        background: #FF5638;
+        border-color: #C2412A #802B1C #802B1C
+        box-shadow: 0 1px 0 #802B1C
+        color: #fff
+        text-decoration: none
+        text-shadow: 0 -1px 1px #802B1C, 1px 0 1px #802B1C, 0 1px 1px #802B1C, -1px 0 1px #802B1C
+        border-radius: 3px
+        width: 30px
+        height 30px
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+        align-items: center
+        cursor pointer
+        outline none
+        border-width: 1px
+        border-style: solid
+        &:hover
+            background: #C22511
+            border-color: #C22511 #80190B #80190B
+            color: #FFFFFF
+    &__change
+        font-size: 30px
+        background: #30A0E6;
+        border-color: #2988C2 #1B5980 #1B5980
+        box-shadow: 0 1px 0 #1B5980
+        color: #fff
+        text-decoration: none
+        text-shadow: 0 -1px 1px #1B5980, 1px 0 1px #1B5980, 0 1px 1px #1B5980, -1px 0 1px #1B5980
+        border-radius: 3px
+        width: 30px
+        height 30px
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+        align-items: center
+        cursor pointer
+        outline none
+        border-width: 1px
+        border-style: solid
+        &:hover
+            background: #2079E6
+            border-color: #1C66C2 #124380 #124380
+            color: #FFFFFF
+    &__item
+        flex: 0 0 calc(33.3333333333% - 8px)
+        display: inline-block
+        margin 15px 4px
+        border 1px solid #ccc
+        background-color: #FFFFFF
+        border-radius: 3px
+        overflow hidden
+        padding 0 15px
+        padding-bottom: 5px
+        & figure 
+            margin 0
+.image
+    &__ico
+        &-del
+            display: inline-block
+            line-height: 1
+            font-weight: 400
+            font-style: normal
+            speak: none
+            text-decoration: inherit
+            text-transform: none
+            text-rendering: auto
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+            width: 20px
+            height: 20px
+            font-size: 20px
+            vertical-align: top
+            text-align: center
+            transition: color .1s ease-in
+            &::before
+                display: inline-block
+                width: 100%
+                height 100%
+                content ''
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                background-image url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ2OS4zMzMgNDY5LjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDY5LjMzMyA0NjkuMzMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDI2LjY2NywwaC0zODRDMTkuMTQ2LDAsMCwxOS4xMzUsMCw0Mi42Njd2Mzg0YzAsMjMuNTMxLDE5LjE0Niw0Mi42NjcsNDIuNjY3LDQyLjY2N2gzODQgICAgYzIzLjUyMSwwLDQyLjY2Ny0xOS4xMzUsNDIuNjY3LTQyLjY2N3YtMzg0QzQ2OS4zMzMsMTkuMTM1LDQ1MC4xODgsMCw0MjYuNjY3LDB6IE0zMzguMjA2LDMwOC4wNDMgICAgYzQuMTY3LDQuMTY1LDQuMTY3LDEwLjkxOSwwLDE1LjA4NWwtMTUuMDgxLDE1LjA4MmMtNC4xNjcsNC4xNjUtMTAuOTE5LDQuMTY1LTE1LjA4NiwwbC03My4zNzQtNzMuMzc0bC03My4zNzQsNzMuMzc0ICAgIGMtNC4xNjcsNC4xNjUtMTAuOTE5LDQuMTY1LTE1LjA4NiwwbC0xNS4wODEtMTUuMDgyYy00LjE2Ny00LjE2NS00LjE2Ny0xMC45MTksMC0xNS4wODVsNzMuMzc0LTczLjM3NWwtNzMuMzc0LTczLjM3NCAgICBjLTQuMTY3LTQuMTY1LTQuMTY3LTEwLjkxOSwwLTE1LjA4NWwxNS4wODEtMTUuMDgyYzQuMTY3LTQuMTY1LDEwLjkxOS00LjE2NSwxNS4wODYsMGw3My4zNzQsNzMuMzc0bDczLjM3NC03My4zNzQgICAgYzQuMTY3LTQuMTY1LDEwLjkxOS00LjE2NSwxNS4wODYsMGwxNS4wODEsMTUuMDgyYzQuMTY3LDQuMTY1LDQuMTY3LDEwLjkxOSwwLDE1LjA4NWwtNzMuMzc0LDczLjM3NEwzMzguMjA2LDMwOC4wNDN6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==')
+
+.add__item
+    background: #0085ba
+    border-color: #0073aa #006799 #006799
+    box-shadow: 0 1px 0 #006799
+    color: #fff
+    text-decoration: none
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799
+    display: block
+    margin-left: auto
+    font-size: 13px
+    line-height: 26px
+    height: 28px
+    margin: 0
+    padding: 0 10px 1px
+    cursor: pointer
+    border-width: 1px
+    border-style: solid
+    -webkit-appearance: none
+    border-radius: 3px
+    white-space: nowrap
+    box-sizing: border-box
+    &:hover
+        background: #008ec2
+        border-color: #006799
+        color: #fff
+    &:before 
+        font-family: dashicons
+        content: "\f132"
+        display: inline-block
+        vertical-align: middle
+        

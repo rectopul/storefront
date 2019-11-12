@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+node_modules
+npm-debug.log
+wp-content/uploads
+wp-content/update
+wp-content/index.php
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+wp-content/ai1wm-backups

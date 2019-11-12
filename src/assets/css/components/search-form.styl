@@ -1,0 +1,91 @@
+.search-form
+    & article
+        display flex
+        width 100%
+        height 76px
+        background #ffffff
+        border-radius 40px
+        flex-flow row nowrap
+        justify-content space-between
+        z-index 3
+    & [class*='search-form__nv']
+        flex 1
+        padding 0 35px
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        position relative
+        &.active
+            z-index 3
+            &:after
+                content url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI3cHgiIGhlaWdodD0iN3B4IiB2aWV3Qm94PSIwIDAgNyA3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPnBsYXktYnV0dG9uICg4MCk8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGcgaWQ9IkhvbWUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9ImxheW91dC1wcm90ZWdpdCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY3MS4wMDAwMDAsIC0yNjEuMDAwMDAwKSIgZmlsbD0iIzI1MjUyNSI+ICAgICAgICAgICAgPGcgaWQ9ImJhbm5lciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC01MTguMDAwMDAwKSI+ICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjQuMDAwMDAwLCA2NzcuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCA2Ny4wMDAwMDMpIj4gICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0icGxheS1idXR0b24tKDgwKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQ2LjkxNjY2NywgMzQuOTk5OTk3KSI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJQYXRoIj4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNTAwMDAwLCAzLjUwMDAwMCkgcm90YXRlKC0yNzAuMDAwMDAwKSB0cmFuc2xhdGUoLTMuNTAwMDAwLCAtMy41MDAwMDApIHRyYW5zbGF0ZSgwLjgzMzMzMywgMC4yMTg3NTApIiBmaWxsLXJ1bGU9Im5vbnplcm8iPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik01LjE3OCwzLjE1MjUgTDAuMzQ0NjY2NjY3LDAuMDI3NSBDMC4yOTM1LC0wLjAwNTQ2ODc1IDAuMjI3MTY2NjY3LC0wLjAwODkwNjI1IDAuMTcyNSwwLjAxNzgxMjUgQzAuMTE3NjY2NjY3LDAuMDQ0ODQzNzUgMC4wODMzMzMzMzMzLDAuMDk3OTY4NzUgMC4wODMzMzMzMzMzLDAuMTU2MDkzNzUgTDAuMDgzMzMzMzMzMyw2LjQwNjA5Mzc1IEMwLjA4MzMzMzMzMzMsNi40NjQyMTg3NSAwLjExNzY2NjY2Nyw2LjUxNzUgMC4xNzI1LDYuNTQ0NTMxMjUgQzAuMTk2ODMzMzMzLDYuNTU2NDA2MjUgMC4yMjM1LDYuNTYyMzQzNzUgMC4yNSw2LjU2MjM0Mzc1IEMwLjI4MzE2NjY2Nyw2LjU2MjM0Mzc1IDAuMzE2MTY2NjY3LDYuNTUyOTY4NzUgMC4zNDQ2NjY2NjcsNi41MzQ2ODc1IEw1LjE3OCwzLjQwOTY4NzUgQzUuMjIzMTY2NjcsMy4zODA0Njg3NSA1LjI1LDMuMzMyNSA1LjI1LDMuMjgxMDkzNzUgQzUuMjUsMy4yMjk2ODc1IDUuMjIzLDMuMTgxNzE4NzUgNS4xNzgsMy4xNTI1IFoiPjwvcGF0aD4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==')                
+            & ul                 
+                & > li
+                    color #252525
+                    &:hover
+                        background rgba(0,0,0,0.6)
+                        color: #FFFFFF !important
+            &:hover
+                cursor: initial                
+        &:after
+            content url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI3cHgiIGhlaWdodD0iN3B4IiB2aWV3Qm94PSIwIDAgNyA3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPlBhdGg8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGcgaWQ9IkhvbWUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9ImxheW91dC1wcm90ZWdpdCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTk0My4wMDAwMDAsIC0yNjEuMDAwMDAwKSIgZmlsbD0iI0Q3RDdENyIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgICAgICA8ZyBpZD0iYmFubmVyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgLTUxOC4wMDAwMDApIj4gICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyNC4wMDAwMDAsIDY3Ny4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDY3LjAwMDAwMykiPiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik01MjQuOTI4MDc3LDM4LjM3MTMyMzcgTDUyMC4wOTQ3NDMsMzUuMjQ2MzIzNyBDNTIwLjA0MzU3NywzNS4yMTMzNTQ5IDUxOS45NzcyNDMsMzUuMjA5OTE3NCA1MTkuOTIyNTc3LDM1LjIzNjYzNjIgQzUxOS44Njc3NDMsMzUuMjYzNjY3NCA1MTkuODMzNDEsMzUuMzE2NzkyNCA1MTkuODMzNDEsMzUuMzc0OTE3NCBMNTE5LjgzMzQxLDQxLjYyNDkxNzQgQzUxOS44MzM0MSw0MS42ODMwNDI0IDUxOS44Njc3NDMsNDEuNzM2MzIzNyA1MTkuOTIyNTc3LDQxLjc2MzM1NDkgQzUxOS45NDY5MSw0MS43NzUyMjk5IDUxOS45NzM1NzcsNDEuNzgxMTY3NCA1MjAuMDAwMDc3LDQxLjc4MTE2NzQgQzUyMC4wMzMyNDMsNDEuNzgxMTY3NCA1MjAuMDY2MjQzLDQxLjc3MTc5MjQgNTIwLjA5NDc0Myw0MS43NTM1MTEyIEw1MjQuOTI4MDc3LDM4LjYyODUxMTIgQzUyNC45NzMyNDMsMzguNTk5MjkyNCA1MjUuMDAwMDc3LDM4LjU1MTMyMzcgNTI1LjAwMDA3NywzOC40OTk5MTc0IEM1MjUuMDAwMDc3LDM4LjQ0ODUxMTIgNTI0Ljk3MzA3NywzOC40MDA1NDI0IDUyNC45MjgwNzcsMzguMzcxMzIzNyBaIiBpZD0iUGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIyLjQxNjc0MywgMzguNDk5OTk3KSByb3RhdGUoLTI3MC4wMDAwMDApIHRyYW5zbGF0ZSgtNTIyLjQxNjc0MywgLTM4LjQ5OTk5NykgIj48L3BhdGg+ICAgICAgICAgICAgICAgICAgICA8L2c+ICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICA8L2c+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=')
+            width: 7px
+            height 7px
+            display inline-block
+            align-self center
+            line-height 7px
+            position absolute
+            right 0px
+            top 50%
+            margin-top -3.5px
+            z-index 3
+        &:hover
+            cursor: no-drop
+        &:first-child
+            border-top-left-radius 40px
+            border-bottom-left-radius 40px
+        & ul 
+            display flex
+            flex-flow column nowrap
+            justify-content flex-start
+            font-family: Roboto
+            font-size: 18px
+            color: #D7D7D7
+            letter-spacing: 0
+            height auto
+            white-space nowrap
+            background #FFFFFF
+            width: 100%
+            position: absolute
+            left 35px
+            top 0
+            z-index 1
+            max-height 76px
+            overflow hidden
+            &.active
+                max-height 1000px
+            & > li 
+                flex 0 0 76px
+                line-height 76px
+                padding 0 20px                
+    &__nv-1
+        & ul 
+            & > li 
+                color #252525
+    &__filter
+        flex 0 0 195px
+        background-image: linear-gradient(230deg, #040404 0%, #252525 100%)
+        border-radius: 38px
+        outline: 0
+        border 0
+        font-family Roboto
+        font-weight 700
+        font-size: 15px
+        color: #FFDE14
+        letter-spacing: 0
+        text-align: center
+        margin 2px 2px 2px
+        text-transform uppercase
+        z-index: 4
+        &:hover
+            color #FFFFFF
